@@ -816,9 +816,9 @@ class CustomObjectDetection:
                         elif output_type == "array":
                             detected_objects_image_array.append(splitted_image.copy())
 
-                if output_type == "file":
+                #if output_type == "file":
                     # we already validated that the output_image_path is a supported by OpenCV one
-                    cv2.imwrite(output_image_path, drawn_image)
+                    #cv2.imwrite(output_image_path, drawn_image)
 
                 if extract_detected_objects:
                     if output_type == "file":
@@ -830,7 +830,7 @@ class CustomObjectDetection:
                     if output_type == "file":
                         return output_objects_array
                     elif output_type == "array":
-                        return drawn_image, output_objects_array
+                        return output_objects_array #removed drawn_image from return values
 
 
 class CustomVideoObjectDetection:
