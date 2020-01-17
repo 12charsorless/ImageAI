@@ -797,7 +797,7 @@ class CustomObjectDetection:
                     each_object_details["box_points"] = [object_box.xmin, object_box.ymin, object_box.xmax, object_box.ymax]
                     output_objects_array.append(each_object_details)
 
-                drawn_image = self.__detection_utils.draw_boxes_and_caption(image_frame.copy(), all_boxes, all_labels,
+                '''drawn_image = self.__detection_utils.draw_boxes_and_caption(image_frame.copy(), all_boxes, all_labels,
                                                                             all_scores, show_names=display_object_name,
                                                                             show_percentage=display_percentage_probability)
 
@@ -824,7 +824,7 @@ class CustomObjectDetection:
                     if output_type == "file":
                         return output_objects_array, detected_objects_image_array
                     elif output_type == "array":
-                        return drawn_image, output_objects_array, detected_objects_image_array
+                        return drawn_image, output_objects_array, detected_objects_image_array'''
 
                 else:
                     if output_type == "file":
