@@ -826,7 +826,7 @@ class CustomObjectDetection:
                     elif output_type == "array":
                         return drawn_image, output_objects_array, detected_objects_image_array'''
 
-                else:
+                if True: #this was an else:
                     if output_type == "file":
                         return output_objects_array
                     elif output_type == "array":
